@@ -1,0 +1,19 @@
+    <html>
+        <head>
+        <title></title>LOGBOOK </title>
+        </head>
+        
+        <body>
+        <form name="log" action="" method="POST">
+        {% csrf_token %}
+        Enter id number: {{ form.as_p }}
+        <input type="submit" value="Submit">
+        </form>
+        <form action="" method="POST">
+            {% csrf_token %}
+            Enter id number:{{ form1.as_p }}
+            <input type="submit" value="Submit" >
+            </form>
+        </body>
+        </html>
+        
